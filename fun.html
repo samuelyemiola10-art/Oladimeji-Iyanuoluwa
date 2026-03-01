@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iyanuoluwa Official Website</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, black, darkred);
+            color: gold;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-shadow: 0 0 20px gold;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: gold;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        #message {
+            display: none;
+            margin-top: 40px;
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to Iyanuoluwa.com 👑</h1>
+    <h2>The Official Global Headquarters</h2>
+
+    <p>CEO. Billionaire. Visionary. Drama Ambassador.</p>
+
+    <button onclick="showMessage()">Click if you admire greatness</button>
+
+    <div id="message">
+        🎉 Congratulations! <br><br>
+        You are now an Official Member of the Iyanuoluwa Fan Club. <br><br>
+        Monthly Subscription Fee: ₦50,000 <br><br>
+        Failure to pay will result in dramatic consequences.
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+
+        // Bonus rage bait effect 😭
+        document.querySelector("button").addEventListener("mouseover", function() {
+            this.style.position = "absolute";
+            this.style.left = Math.random() * window.innerWidth + "px";
+            this.style.top = Math.random() * window.innerHeight + "px";
+        });
+    </script>
+
+</body>
+</html>
